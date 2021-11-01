@@ -1,0 +1,72 @@
+// banner
+.banner{
+    width: 100%;
+    .img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// context
+.context{
+    padding: 0em 0em 1.5em;
+    .container{
+        .list{
+            margin-right: 2em;
+           h3{
+                font-size: 1.5em;
+                margin-left: 0.9em;
+            }
+            li{
+                .info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #000;
+                    margin: 2em 1em 0em;
+                    align-items: center;
+                    font-size: 1.3em;
+                   
+                    a{
+                        color: #666666;
+                    }
+
+                  
+
+                    label{
+                        font-size: 1.2em;
+                        margin-right: .5em;
+                        cursor: pointer;
+                    }
+
+                    .icon{
+                        height: 3em;
+                    }
+                   
+                }
+                input{
+                    display: none;
+                }
+                input:checked ~ .icon{
+                    height: 2.5em;
+                    transition: all linear .3s;
+                    margin-left: .9em;
+                }
+                .icon{
+                    width: 100%;
+                    height: 0em;
+                    font-size: 1.5em;
+                    background: #66a0bb;
+                    line-height: 2.5em;
+                    text-align: center;
+                    z-index: 99;
+                    color: #fff;
+                    margin-left: .9em;
+
+                }
+            }
+        }
+    }
+}
